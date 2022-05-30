@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router';
 
-import InfiniteScroll from "react-infinite-scroll-component";
+import InfiniteScroll from "react-infinite-scroller";
 
 import styles from './Results.module.css'
 
@@ -46,10 +46,10 @@ const Results = ({ results }) => {
   const renderResults = () => {
     return (
       <InfiniteScroll
-        dataLength={data.length}
-        next={loadMore}
+        pageStart={0}
+        loadMore={loadMore}
         hasMore
-        endMessage={<h3>Nothing to show.</h3>}
+        loader={<div className={styles.loader}>loading...</div>}
       >
         <div>
           {data?.map((item) => singleResult(item))}
@@ -59,7 +59,7 @@ const Results = ({ results }) => {
   }
 
   return (
-    <div style={{ marginTop: 50 }}>
+    <div style={{ marginTop: 90 }}>
       {renderResults()}
     </div>
   )

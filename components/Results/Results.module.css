@@ -49,3 +49,11 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.loader {
+  width: 100%;
+  font-size: 1.5rem;
+  color: rgb(114, 114, 114);
+  margin-bottom: 60px;
+  text-align: center;
+}
