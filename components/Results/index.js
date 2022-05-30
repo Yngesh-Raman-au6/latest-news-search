@@ -21,7 +21,7 @@ const Results = ({ results }) => {
 
 
   const loadMore = async () => {
-    const url = `http://hn.algolia.com/api/v1/search?query=${router.query.query}&page=${page + 1}&hitsPerPage=7`
+    const url = `https://hn.algolia.com/api/v1/search?query=${router.query.query}&page=${page + 1}&hitsPerPage=7`
     const response = await fetch(url)
     const resData = await response.json()
     setData(data => [...data, ...resData.hits])

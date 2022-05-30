@@ -31,7 +31,7 @@ const ResulsPage = ({ results }) => {
 export default ResulsPage
 
 export const getServerSideProps = async (ctx) => {
-  const url = `http://hn.algolia.com/api/v1/search?query=${ctx.query.query}&page=1&hitsPerPage=7`
+  const url = `https://hn.algolia.com/api/v1/search?query=${ctx.query.query}&page=1&hitsPerPage=7`
   const response = await fetch(url)
   const data = await response.json()
   return { props: { results: data } }
