@@ -1,0 +1,26 @@
+.container {
+  opacity: 0.97;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo {
+  color: rgb(21, 21, 75);
+  margin: 7px 2rem;
+}
+
+.input {
+  border: 1px solid rgb(218, 218, 218);
+  min-width: 50%;
+  padding: 9px 20px;
+  outline: none;
+  color: rgb(66, 66, 66);
+  border-radius: 50px;
+  margin-left: 2rem;
+}

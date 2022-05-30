@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 6em;
+  font-weight: 500;
+  color: rgb(21, 21, 75);
+}
+
+.input {
+  box-shadow: 1px 1px 6px 0 rgb(32 33 36 / 28%);
+  border: 1px solid rgb(218, 218, 218);
+  min-width: 300px;
+  width: 40%;
+  padding: 13px 20px;
+  outline: none;
+  color: rgb(66, 66, 66);
+  border-radius: 50px;
+  margin-left: 2rem;
+}
